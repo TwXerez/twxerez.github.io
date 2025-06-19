@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultados | TwXerez</title>
+    <title>Inicio | TwXerez</title>
 </head>
 <body>
     <header class="header">
@@ -45,8 +45,20 @@
     <main class="main">
         <h2 class="resultados__titulo">Últimos Resultados</h2>
 
+        <div class="resultados__filtro">
+            <label for="filtroResultados">Filtrar por competición:</label>
+            <select id="filtroResultados" onchange="filtrarResultados()">
+                <option value="todas">Todas</option>
+                <option value="liga">KL Pro League</option>
+                <option value="copa">Copas</option>
+                <option value="amistoso">Amistosos</option>
+            </select>
+        </div>
+        
+        
+
         <section class="resultados">
-            <article class="resultado__partido">
+            <article class="resultado__partido amistoso">
                 <div class="resultado__fecha">13 JUN</div>
         
                 <div class="resultado__contenido">
@@ -74,7 +86,7 @@
                 </div>
             </article>
         
-            <article class="resultado__partido">
+            <article class="resultado__partido amistoso">
                 <div class="resultado__fecha">13 JUN</div>
         
                 <div class="resultado__contenido">
@@ -102,7 +114,7 @@
                 </div>
             </article>
 
-            <article class="resultado__partido">
+            <article class="resultado__partido amistoso">
                 <div class="resultado__fecha">14 JUN</div>
         
                 <div class="resultado__contenido">
@@ -130,7 +142,7 @@
                 </div>
             </article>
 
-            <article class="resultado__partido">
+            <article class="resultado__partido amistoso">
                 <div class="resultado__fecha">14 JUN</div>
         
                 <div class="resultado__contenido">
@@ -158,7 +170,7 @@
                 </div>
             </article>
 
-            <article class="resultado__partido">
+            <article class="resultado__partido amistoso">
                 <div class="resultado__fecha">15 JUN</div>
         
                 <div class="resultado__contenido">
@@ -186,7 +198,7 @@
                 </div>
             </article>
 
-            <article class="resultado__partido">
+            <article class="resultado__partido amistoso">
                 <div class="resultado__fecha">15 JUN</div>
         
                 <div class="resultado__contenido">
@@ -214,7 +226,7 @@
                 </div>
             </article>
 
-            <article class="resultado__partido">
+            <article class="resultado__partido amistoso">
                 <div class="resultado__fecha">15 JUN</div>
         
                 <div class="resultado__contenido">
@@ -242,7 +254,7 @@
                 </div>
             </article>
 
-            <article class="resultado__partido">
+            <article class="resultado__partido amistoso">
                 <div class="resultado__fecha">15 JUN</div>
         
                 <div class="resultado__contenido">
@@ -289,5 +301,6 @@
             </p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
