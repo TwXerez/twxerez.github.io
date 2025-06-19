@@ -188,7 +188,302 @@
     letter-spacing: 0.05em;
 }
 
+/* Calendario */
+.calendario__titulo {
+    text-align: center;
+    font-family: var(--titulos);
+    font-size: 2.5rem;
+    color: var(--principal1-b);
+    margin: 3rem 0 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
 
+.calendario {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.calendario__partido {
+    display: flex;
+    border-left: 5px solid var(--principal1-a);
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.calendario__fecha {
+    background-color: var(--principal1-c);
+    color: #fff;
+    font-family: var(--titulos);
+    font-size: 1.3rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 6rem;
+    text-align: center;
+}
+
+.calendario__contenido {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.calendario__competicion {
+    font-size: 0.9rem;
+    color: #555;
+    font-family: var(--parrafos);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.calendario__equipos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.equipo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--titulos);
+    font-size: 1.1rem;
+}
+
+
+.equipo img {
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+}
+
+.vs {
+    font-size: 1.1rem;
+    font-family: var(--titulos);
+    font-weight: bold;
+    color: var(--principal1-b);
+}
+
+.calendario__estadio {
+    font-family: var(--parrafos);
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Resultados */
+.resultados__titulo {
+    text-align: center;
+    font-family: var(--titulos);
+    font-size: 2.5rem;
+    color: var(--principal1-b);
+    margin: 3rem 0 1rem;
+    text-transform: uppercase;
+}
+
+.resultados {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.resultado__partido {
+    display: flex;
+    background-color: #ffffff;
+    border-left: 5px solid var(--principal1-b);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.resultado__fecha {
+    background-color: var(--principal1-c);
+    color: #fff;
+    font-family: var(--titulos);
+    font-size: 1.3rem;
+    padding: 1rem;
+    min-width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.resultado__contenido {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.resultado__competicion {
+    font-size: 0.9rem;
+    color: #555;
+    font-family: var(--parrafos);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.resultado__equipos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.equipo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--titulos);
+    font-size: 1.1rem;
+}
+
+.equipo img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.marcador {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--titulos);
+    display: flex;
+    gap: 0.25rem;
+    color: var(--principal1-b);
+}
+
+.resultado__estadio {
+    font-family: var(--parrafos);
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Plantilla */
+.plantilla__titulo {
+    text-align: center;
+    font-family: var(--titulos);
+    font-size: 2.5rem;
+    margin: 3rem 0 2rem;
+    color: var(--principal1-b);
+    text-transform: uppercase;
+}
+
+.plantilla {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jugador {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.jugador:hover {
+    transform: translateY(-5px);
+}
+
+.jugador__foto {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.jugador__info {
+    padding: 1rem;
+    font-family: var(--parrafos);
+}
+
+.jugador__dorsal {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--principal1-a);
+    margin-bottom: 0.5rem;
+}
+
+.jugador__nombre {
+    font-size: 1.3rem;
+    font-family: var(--titulos);
+    margin-bottom: 0.25rem;
+}
+
+.jugador__posicion {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.jugador__nombre i {
+    margin-left: 6px;
+    color: #FFD700; 
+    font-size: 0.75em;
+    vertical-align: middle;
+}
+
+.plantilla__leyenda {
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    padding: 1.5rem 2rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    font-family: var(--parrafos);
+}
+
+.leyenda__titulo {
+    font-family: var(--titulos);
+    font-size: 1.5rem;
+    color: var(--principal1-b);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.leyenda__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.leyenda__lista li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.leyenda__lista i {
+    font-size: 1.2rem;
+    color: #FFD700; 
+}
 
 /* Footer */
 footer {
@@ -229,6 +524,29 @@ footer .copyright {
     margin-top: 0.5rem;
 }
 
+.header__titulo-responsive {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    font-family: var(--titulos);
+    font-size: 1.5rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+    margin-left: 1rem;
+    line-height: 1;
+}
+
+.header__logo-responsive {
+    width: 2rem;
+    height: auto;
+    display: block;
+}
+
+
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
@@ -237,11 +555,23 @@ footer .copyright {
     }
 
     .header__menu {
-        flex-direction: column !important;
-        text-align: center !important;
-        position: relative;
-        padding: .5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1rem;
     }
+
+    .header__titulo-responsive {
+        display: flex;
+    }
+
+    #menu__toggle:checked ~ .header__titulo-responsive {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0.95);
+    }
+
 
     .menu__toggle {
         display: flex !important;
@@ -296,6 +626,7 @@ footer .copyright {
         transform: translateY(-0.5rem) rotate(-45deg);
     }
 
+    /* -------- Resumen Responsivo -------- */
     .resumen {
         flex-direction: column;
         height: auto;
@@ -326,4 +657,119 @@ footer .copyright {
         height: auto;
         aspect-ratio: 16 / 9;
     }
+
+    .calendario__partido {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .calendario__fecha {
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem;
+        font-size: 1.1rem;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .calendario__contenido {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .calendario__equipos {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .vs {
+        margin: 0.5rem 0;
+    }
+
+    .equipo {
+        justify-content: center;
+    }
+
+    .resultado__partido {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .resultado__fecha {
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem;
+        font-size: 1.1rem;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .resultado__contenido {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .resultado__equipos {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .marcador {
+        font-size: 1.4rem;
+    }
+
+    .equipo {
+        justify-content: center;
+    }
+}
+
+
+.galeria__subtitulo {
+    text-align: center;
+    font-family: var(--titulos);
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+    color: var(--principal1-b);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Galería de Imágenes */
+.galeria__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 0 2rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galeria__grid img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria__grid img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Galería de Vídeos */
+.galeria__videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galeria__videos-grid iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: none;
 }
