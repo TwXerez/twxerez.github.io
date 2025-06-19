@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | TwXerez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header class="header">
+        <section class="header__navegacion">
+            <article class="header__menu">
+    
+                <input type="checkbox" id="menu__toggle" class="menu__toggle-checkbox">
+                
+                <div class="header__titulo-responsive">
+                    <img src="img/white_xcd.png" alt="Escudo TwXerez" class="header__logo-responsive">
+                    <span>Tw Xerez</span>
+                </div>
+
+                <label for="menu__toggle" class="menu__toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+    
+                <nav class="menu__navegacion">
+                    <ul class="navegacion__lista">
+                        <li class="lista__elemento"><a href="plantilla.html" class="elemento__enlace">Plantilla</a></li>
+                        <li class="lista__elemento"><a href="calendario.html" class="elemento__enlace">Calendario</a></li>
+                        <li class="lista__elemento"><a href="index.html"><img src="img/logo.png" alt="Logo TwXerez" class="elemento__logo"></a></li>
+                        <li class="lista__elemento"><a href="resultados.html" class="elemento__enlace">Resultados</a></li>
+                        <li class="lista__elemento"><a href="galeria.html" class="elemento__enlace">Galería</a></li>
+                    </ul>
+                </nav>
+            </article>
+        </section>
+    </header>
+
+    <main class="main">
+        <h2 class="plantilla__titulo">Galería</h2>
+
+        <section class="galeria__imagenes">
+            <h3 class="galeria__subtitulo">Imágenes</h3>
+            <div class="galeria__grid">
+                <a href="img/foto1.jpg" data-lightbox="galeria" data-title="Foto 1">
+                    <img src="img/foto1.jpg" alt="Foto 1">
+                </a>
+            </div>
+        </section>
+
+        <!-- Galería de Vídeos -->
+        <section class="galeria__videos">
+            <h3 class="galeria__subtitulo">Vídeos</h3>
+            <div class="galeria__videos-grid">
+                <iframe src="https://www.youtube.com/embed/ZKJ27gvMGV4?si=0GkvbX9aXslUx7Gm" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="rrss-icons">
+                <a href="https://twitter.com/TwXerez" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://youtube.com/@TwXerez" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <p class="copyright">
+                © TwXerez 2025
+            </p>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
