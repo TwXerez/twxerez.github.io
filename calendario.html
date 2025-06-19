@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendario | TwXerez</title>
+    <title>Inicio | TwXerez</title>
 </head>
 <body>
     <header class="header">
@@ -44,8 +44,18 @@
     <main class="main">
         <h2 class="calendario__titulo">Calendario de Partidos</h2>
 
+        <div class="calendario__filtro">
+            <label for="filtroCalendario">Filtrar por competición:</label>
+            <select id="filtroCalendario" onchange="filtrarCalendario()">
+                <option value="todas">Todas</option>
+                <option value="liga">KL Pro League</option>
+                <option value="copa">Copas</option>
+                <option value="amistoso">Amistosos</option>
+            </select>
+        </div>
+        
         <section class="calendario">
-            <article class="calendario__partido">
+            <article class="calendario__partido liga">
                 <div class="calendario__fecha">23-29 JUN</div>
 
                 <div class="calendario__contenido">
@@ -67,7 +77,7 @@
                 </div>
             </article>
 
-            <article class="calendario__partido">
+            <article class="calendario__partido liga">
                 <div class="calendario__fecha">30-06 </br>JUN/JUL</div>
 
                 <div class="calendario__contenido">
@@ -89,7 +99,7 @@
                 </div>
             </article>
 
-            <article class="calendario__partido">
+            <article class="calendario__partido liga">
                 <div class="calendario__fecha">07-13 JUL</div>
 
                 <div class="calendario__contenido">
@@ -111,7 +121,7 @@
                 </div>
             </article>
 
-            <article class="calendario__partido">
+            <article class="calendario__partido liga">
                 <div class="calendario__fecha">14-20 JUL</div>
 
                 <div class="calendario__contenido">
@@ -133,13 +143,13 @@
                 </div>
             </article>
 
-            <article class="calendario__partido">
+            <article class="calendario__partido liga">
                 <div class="calendario__fecha">21-27 JUL</div>
 
                 <div class="calendario__contenido">
                     <p class="calendario__competicion">KL Pro League - Jornada 5</p>
 
-                    <div class="calendario__equipos">
+                    <div class="calendario__equipos liga">
                         <div class="equipo">
                             <img src="img/xerez.png" alt="Escudo TwXerez">
                             <span>Tw Xerez</span>
@@ -155,7 +165,7 @@
                 </div>
             </article>
 
-            <article class="calendario__partido">
+            <article class="calendario__partido liga">
                 <div class="calendario__fecha">28-03 </br>JUL/AGO</div>
 
                 <div class="calendario__contenido">
@@ -177,7 +187,7 @@
                 </div>
             </article>
 
-            <article class="calendario__partido">
+            <article class="calendario__partido liga">
                 <div class="calendario__fecha">04-10 AGO</div>
 
                 <div class="calendario__contenido">
@@ -199,7 +209,7 @@
                 </div>
             </article>
 
-            <article class="calendario__partido">
+            <article class="calendario__partido liga">
                 <div class="calendario__fecha">11-17 AGO</div>
 
                 <div class="calendario__contenido">
@@ -239,5 +249,7 @@
             </p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
