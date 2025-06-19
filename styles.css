@@ -281,6 +281,26 @@
     color: #333;
 }
 
+.calendario__filtro {
+    text-align: center;
+    margin: 2rem auto 1rem;
+    font-family: var(--parrafos);
+}
+
+.calendario__filtro label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.calendario__filtro select {
+    padding: 0.4rem 0.7rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid #ccc;
+    font-family: var(--parrafos);
+}
+
+
 /* Resultados */
 .resultados__titulo {
     text-align: center;
@@ -372,6 +392,25 @@
     font-family: var(--parrafos);
     font-size: 0.95rem;
     color: #333;
+}
+
+.resultados__filtro {
+    text-align: center;
+    margin: 2rem auto 1rem;
+    font-family: var(--parrafos);
+}
+
+.resultados__filtro label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.resultados__filtro select {
+    padding: 0.4rem 0.7rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid #ccc;
+    font-family: var(--parrafos);
 }
 
 /* Plantilla */
@@ -692,7 +731,6 @@ display: none;
         transform: translateY(-0.5rem) rotate(-45deg);
     }
 
-    /* -------- Resumen Responsivo -------- */
     .resumen {
         flex-direction: column;
         height: auto;
