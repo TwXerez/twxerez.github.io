@@ -55,6 +55,8 @@
                     <p class="resultado"><strong>TwXerez</strong> 5 - 2 <strong>Tw Zaragoza</strong></p>
                     <p class="estadio">Municipal de Chapín</p>
                     <p class="fecha">15 de junio de 2025</p>
+        
+                    <button class="detalle-btn" data-id="modal_resumen">Ver Detalles</button>
                 </div>
             </div>
         
@@ -68,7 +70,24 @@
                     allowfullscreen>
                 </iframe>
             </div>
+        
+            <div class="modal" id="modal_resumen">
+                <div class="modal__contenido">
+                    <span class="modal__cerrar">&times;</span>
+                    <h3>Detalles del Partido</h3>
+                    <ul class="modal__lista">
+                        <li class="evento local">⚽ Min 14 - Gol de Morata Jr</li>
+                        <li class="evento visitante">⚽ Min 19 - Gol de Tw Zaragoza</li>
+                        <li class="evento local">⚽ Min 33 - Gol de Morata Jr</li>
+                        <li class="evento local">⚽ Min 47 - Gol de Morata Jr</li>
+                        <li class="evento visitante">⚽ Min 50 - Gol de Tw Zaragoza</li>
+                        <li class="evento local">⚽ Min 71 - Gol de Crespo</li>
+                        <li class="evento local">⚽ Min 82 - Gol de Morata Jr</li>
+                    </ul>
+                </div>
+            </div>
         </section>
+        
         
     </main>
 
@@ -90,5 +109,7 @@
             </p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
