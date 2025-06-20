@@ -28,3 +28,24 @@ function filtrarCalendario() {
     });
 }
 
+document.querySelectorAll('.detalle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-id');
+        const modal = document.getElementById(id);
+        if (modal) modal.style.display = 'flex';
+    });
+});
+
+document.querySelectorAll('.modal__cerrar').forEach(cerrar => {
+    cerrar.addEventListener('click', () => {
+        cerrar.closest('.modal').style.display = 'none';
+    });
+});
+
+window.addEventListener('click', function (e) {
+    document.querySelectorAll('.modal').forEach(modal => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
