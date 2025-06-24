@@ -633,7 +633,201 @@ display: none;
     display: none;
 }
 
+/* Modales */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
 
+.modal__contenido {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 90%;
+    width: 400px;
+    font-family: var(--parrafos);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: left;
+    animation: modalFade 0.3s ease-out;
+}
+
+@keyframes modalFade {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal__cerrar {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #999;
+    transition: color 0.2s ease;
+}
+
+.modal__cerrar:hover {
+    color: var(--principal1-a);
+}
+
+.modal__lista {
+    margin-top: 1.5rem;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.detalle-btn {
+    margin-top: 1.5rem;
+    background-color: var(--principal1-b);
+    color: var(--blanco);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-family: var(--titulos);
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.detalle-btn:hover {
+    background-color: var(--principal1-c);
+    transform: scale(1.05);
+}
+
+.evento {
+    font-size: 0.95rem;
+    font-family: var(--parrafos);
+    line-height: 1.4;
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.4rem;
+    background-color: #f1f1f1;
+    max-width: 90%;
+}
+
+.evento.local {
+    align-self: flex-start;
+    background-color: #e6f2ff;
+    text-align: left;
+}
+
+.evento.visitante {
+    align-self: flex-end;
+    background-color: #fff1f1;
+    text-align: right;
+}
+
+
+/* Noticia */
+.noticia-resumen {
+    background-color: #f4f4f4;
+    padding: 3rem 2rem;
+    font-family: var(--parrafos);
+}
+
+.noticia-resumen__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.noticia-resumen__imagen {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.noticia-resumen__texto {
+    max-width: 700px;
+}
+
+.noticia-resumen__subtitulo {
+    font-size: 1.7rem;
+    font-family: var(--titulos);
+    color: var(--principal1-b);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.noticia-resumen__boton {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--principal1-b);
+    color: white;
+    padding: 0.7rem 1.5rem;
+    font-family: var(--titulos);
+    text-transform: uppercase;
+    border-radius: 0.4rem;
+    transition: background-color 0.3s ease;
+}
+
+.noticia-resumen__boton:hover {
+    background-color: var(--principal1-c);
+}
+
+
+/* Comunicados */
+.comunicado {
+    background-color: #f4f4f4;
+    padding: 3rem 2rem;
+    font-family: var(--parrafos);
+}
+
+.comunicado__titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: var(--titulos);
+    color: var(--principal1-b);
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+}
+
+.comunicado__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.comunicado__imagen {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.comunicado__texto {
+    max-width: 800px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    padding: 0 1rem;
+}
+
+.comunicado__texto p {
+    margin-bottom: 1.2rem;
+}
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
@@ -823,102 +1017,18 @@ display: none;
     .equipo {
         justify-content: center;
     }
-}
 
-
-.modal {
-    display: none;
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.modal__contenido {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 1rem;
-    max-width: 90%;
-    width: 400px;
-    font-family: var(--parrafos);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    position: relative;
-    text-align: left;
-    animation: modalFade 0.3s ease-out;
-}
-
-@keyframes modalFade {
-    from {
-        transform: scale(0.95);
-        opacity: 0;
+    .comunicado__contenido {
+        padding: 1rem;
     }
-    to {
-        transform: scale(1);
-        opacity: 1;
+
+    .comunicado__imagen {
+        max-width: 100%;
+        width: 100%;
     }
-}
 
-.modal__cerrar {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: #999;
-    transition: color 0.2s ease;
-}
-
-.modal__cerrar:hover {
-    color: var(--principal1-a);
-}
-
-.modal__lista {
-    margin-top: 1.5rem;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.detalle-btn {
-    margin-top: 1.5rem;
-    background-color: var(--principal1-b);
-    color: var(--blanco);
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    font-family: var(--titulos);
-    font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.detalle-btn:hover {
-    background-color: var(--principal1-c);
-    transform: scale(1.05);
-}
-
-.evento {
-    font-size: 0.95rem;
-    font-family: var(--parrafos);
-    line-height: 1.4;
-    padding: 0.4rem 0.75rem;
-    border-radius: 0.4rem;
-    background-color: #f1f1f1;
-    max-width: 90%;
-}
-
-.evento.local {
-    align-self: flex-start;
-    background-color: #e6f2ff;
-    text-align: left;
-}
-
-.evento.visitante {
-    align-self: flex-end;
-    background-color: #fff1f1;
-    text-align: right;
+    .comunicado__texto {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
 }
