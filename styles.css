@@ -855,7 +855,7 @@ display: none;
 .noticia-card__imagen {
     width: 300px;
     object-fit: cover;
-    height: 100%;
+    height: auto;
     max-height: 100%;
 }
 
