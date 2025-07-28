@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hazte Abonado - Club Pro</title>
+  <link rel="stylesheet" href="styles44.css" />
+</head>
+<body>
+  <div class="abonado-form">
+    <h2>Hazte abonado del club</h2>
+    <input type="email" id="email" placeholder="Introduce tu email" />
+    <button onclick="enviarCodigo()">Enviar código</button>
+
+    <div id="verificacion" style="display: none;">
+      <input type="text" id="codigo" placeholder="Introduce el código recibido" />
+      <button onclick="verificarCodigo()">Verificar</button>
+    </div>
+
+    <div id="carnet" style="display: none;"></div>
+  </div>
+
+  <!-- ✅ SDK de EmailJS v3 (compatible en local sin módulos) -->
+  <script src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
+
+  <!-- ✅ Inicializa EmailJS con tu Public Key -->
+  <script>
+    emailjs.init("cGlG-tSIRaHS8tyOV"); // Reemplaza si usas otra clave
+  </script>
+
+  <!-- ✅ Tu JS principal con defer para asegurar orden -->
+  <script src="abonado.js" defer></script>
+</body>
+</html>
