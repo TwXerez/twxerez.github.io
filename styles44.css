@@ -1,0 +1,36 @@
+body {
+    font-family: system-ui, sans-serif;
+    background: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .abonado-form {
+    background: #fff;
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+  }
+  
+  input, button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    font-size: 14px;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  #carnet {
+    margin-top: 20px;
+    padding: 20px;
+    background: #e6f7ff;
+    border: 1px solid #91d5ff;
+    border-radius: 8px;
+  }
+  
